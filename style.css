@@ -1,0 +1,93 @@
+:root {
+    --gold: #D4AF37;
+    --dark-blue: #0A0E1A;
+    --glass: rgba(255, 255, 255, 0.05);
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--dark-blue);
+    color: white;
+    line-height: 1.6;
+}
+
+/* Updated Container Spacing since we removed the cover photo */
+.form-container {
+    max-width: 600px;
+    margin: 40px auto; /* Changed from -50px to 40px to sit properly on the page */
+    background: var(--glass);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 15px;
+    border: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+h2 {
+    color: var(--gold);
+    text-align: center;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #ccc;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #444;
+    border-radius: 5px;
+    color: white; /* Typed text color */
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+/* FIX FOR QUESTION 3: This ensures dropdown options are readable */
+select option {
+    background-color: #1a1a1a; /* Dark background for the list */
+    color: white;             /* White text for the list */
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: var(--gold);
+    outline: none;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 15px;
+    background: var(--gold);
+    border: none;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-submit:hover {
+    background: #b8962d;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.8rem;
+    opacity: 0.6;
+}

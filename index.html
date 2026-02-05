@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ember & Veil | Private Beta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section class="form-container" style="margin-top: 50px;">
+        
+        <div class="flyer-display">
+            <img src="assets/flyer.png" alt="Ember and Veil Invitation" style="width:100%; border-radius:10px; margin-bottom:20px;">
+        </div>
+
+        <h2>Apply for the Private Beta</h2>
+        <p class="subtitle">Personalized vetting for total privacy and high-value connections.</p>
+        
+        <form action="https://formspree.io/f/xvzbprgv" method="POST">
+            
+            <div class="input-group">
+                <label>1. Professional Identity (LinkedIn URL or IG Handle)</label>
+                <input type="text" name="Professional Identity" placeholder="https://linkedin.com/in/yourprofile" required>
+            </div>
+
+            <div class="input-group">
+                <label>2. Do you agree to the Privacy Pledge & Zero-Screenshot Policy?</label>
+                <select name="Privacy Agreement" required>
+                    <option value="">Select an option</option>
+                    <option value="yes">Yes, I commit to total privacy</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label>3. Which best describes your typical Abuja weekend?</label>
+                <select name="Abuja Lifestyle" required>
+                    <option value="">Select an option</option>
+                    <option value="corporate">Networking at corporate events</option>
+                    <option value="brunch">Private brunch in Maitama</option>
+                    <option value="travel">International travel / Getaways</option>
+                    <option value="hosting">Hosting closed-door gatherings</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label>4. What are you looking for most in this private space?</label>
+                <textarea name="Personal Narrative" rows="3" placeholder="Tell us your narrative..."></textarea>
+            </div>
+
+            <div class="input-group">
+                <label>5. Referral Code (Optional)</label>
+                <input type="text" name="Referral Code" placeholder="Enter code if applicable">
+            </div>
+
+            <div class="input-group">
+                <label>Your Contact Email</label>
+                <input type="email" name="Email" placeholder="email@example.com" required>
+            </div>
+
+            <button type="submit" class="btn-submit">Submit Application</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Ember & Veil. Screenshot Secure Technology Enabled.</p>
+    </footer>
+
+</body>
+</html>
